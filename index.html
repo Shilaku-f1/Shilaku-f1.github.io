@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shilaku Innocent - Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="personal.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            background: white;
+        }
+        header, .about-me, .contact-info, .cv, footer {
+            display: block;
+        }
+        .cv-section {
+            display: none;
+        }
+        .visible {
+            display: block;
+        }
+        h1 {
+            color: white;
+        }
+        h2, h3 {
+            color: #00BFFF; /* Light Blue color */
+        }
+        .cv-section h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
+        }
+        .contact-info a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .cv-content {
+            margin-bottom: 20px;
+        }
+        .cv-content p, .cv-content ul {
+            margin: 0;
+            padding: 0;
+        }
+        .cv-content ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .cv-content ul li {
+            margin-bottom: 10px;
+        }
+        .cv-content h3 {
+            margin: 0;
+        }
+        .contact-dropdown {
+            display: inline-block;
+            position: relative;
+        }
+        .contact-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 8px;
+            overflow: hidden;
+            color: white;
+        }
+        .contact-dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+        .contact-dropdown-content a:hover {
+            background-color: #333;
+        }
+        .contact-dropdown:hover .contact-dropdown-content {
+            display: block;
+        }
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.3s, color 0.3s;
+            color: #333;
+        }
+        .social-icons a:hover {
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+        .social-icons a.phone { color: #4CAF50; }
+        .social-icons a.email { color: #D44638; }
+        .social-icons a.linkedin { color: #0077B5; }
+        .social-icons a.instagram { color: #E4405F; }
+        .social-icons a.github { color: #333; }
+        .social-icons a.facebook { color: #3b5998; }
+        .social-icons a.twitter { color: #1DA1F2; }
+        .social-icons a.whatsapp { color: #25D366; }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+        .cv-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: white;
+            background-color: #007BFF; /* Blue background color */
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .cv-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <header class="visible">
+        <div class="container content">
+            <h1>SHILAKU INNOCENT OMUYONGA</h1>
+        </div>
+    </header>
+    <section class="about-me visible">
+        <h2>About Me</h2>
+        <p>I am Shilaku Innocent, a computer scientist and IT expert.</p>
+        <p>I enjoy swimming, watching movies, dancing, travelling, skating, and partying &#128514;</p>
+    </section>
+    <section class="contact-info visible">
+        <h2>Contact Information</h2>
+        <div class="contact-dropdown">
+            <strong>Phone:</strong>
+            <i class="fas fa-phone phone"></i>
+            <div class="contact-dropdown-content">
+                <a href="tel:+254708741173">+254708741173</a>
+                <a href="tel:+254105189394">+254105189394</a>
+            </div>
+        </div>
+        <div class="contact-dropdown">
+            <strong>Email:</strong>
+            <i class="fas fa-envelope email"></i>
+            <div class="contact-dropdown-content">
+                <a href="mailto:shilakuinnocent72@gmail.com">shilakuinnocent72@gmail.com</a>
+                <a href="mailto:eennoesheelarcoo@gmail.com">eennoesheelarcoo@gmail.com</a>
+                <a href="mailto:shilakuinnocent@gmail.com">shilakuinnocent@gmail.com</a>
+            </div>
+        </div>
+        <p><strong>Social Media</strong></p>
+        <ul class="social-icons">
+            <li><a href="https://www.linkedin.com/in/innocent-shilaku-a2791a25b" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/Shilaku-f1" target="_blank" class="github"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://www.instagram.com/yourusername" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.facebook.com/yourprofile" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/yourprofile" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://wa.me/254708741173" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a></li>
+        </ul>
+    </section>
+    <section class="cv">
+        <h2>CV</h2>
+        <p><a href="#" onclick="showCV(); return false;" class="cv-button">📄 View My CV</a></p>
+    </section>
+    <section class="cv-section">
+        <div class="cv-content">
+            <h2>Summary</h2>
+            <p>Enthusiastic and driven IT student currently pursuing a Bachelor of Science in Computer Science at Maseno University, with a strong academic background in computer literacy, web designing, networking, and IT support. Possesses practical experience as an IT Instructor at Computers For Schools Kenya, where I taught computer packages and hardware maintenance, and as a Refurbishing Department Technician at CFSK Institute of ICT, where I successfully refurbished and repaired laptops and computers. Additionally, gained hands-on experience as an E-waste Management Intern at WEE Center. Proficient in HTML, CSS, JavaScript, and C#, with a solid understanding of digital marketing principles acquired through a course at Great Learning. Seeking a challenging role to apply and further develop my technical skills in a dynamic environment.</p>
+        </div>
+        <div class="cv-content">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Bachelor of Science in Computer Science</strong><br>Maseno University, Kisumu, Kenya<br>Start Date: 2022 - Present<br>Relevant Coursework: Computer Literacy, Web Designing, Networking, IT Support</li>
+                <li><strong>Shikunga High School</strong><br>KCSE Exam: 2021<br>Grade: A-</li>
+            </ul>
+        </div>
+        <div class="cv-content">
+            <h2>Certifications</h2>
+            <ul>
+                <li><strong>E-waste Management Course</strong> (WEEE Center, April - July 2022)</li>
+                <li><strong>Hardware Maintenance Course</strong> (Computer for Schools Kenya, June 2023 - August 2023)<br>Acquired expertise in hardware installation, configuration, troubleshooting, diagnostics, preventive maintenance, upgrades, and basic laptop/computer repair.</li>
+            </ul>
+        </div>
+        <div class="cv-content">
+            <h2>Work Experience</h2>
+            <ul>
+                <li><strong>User Experience Technologies</strong><br>Web development intern (June 2024 – Present)</li>
+                <li><strong>Computers For Schools Kenya</strong><br>IT Instructor (February 2024 - May 2024)<br>• Taught computer packages and hardware maintenance.<br>• Developed and implemented engaging lesson plans.<br>• Provided hands-on hardware troubleshooting and maintenance support.</li>
+                <li><strong>CFSK Institute of ICT</strong><br>Refurbishing Department Technician (August 2023 - October 2023)<br>• Successfully refurbished laptops and computers to extend their lifespan.<br>• Conducted thorough hardware diagnostics and repairs.<br>• Implemented effective troubleshooting techniques.</li>
+                <li><strong>WEEE Center</strong><br>E-waste Management Intern (August 2022)</li>
+            </ul>
+        </div>
+        <div class="cv-content">
+            <h2>Skills</h2>
+            <ul>
+                <li><strong>Programming:</strong> C#</li>
+                <li><strong>Hardware Maintenance:</strong> Computer Hardware Maintenance</li>
+                <li><strong>Software:</strong> Software Installation and Troubleshooting</li>
+                <li><strong>Networking</strong></li>
+                <li><strong>Web Design:</strong> Front-End Web Design (HTML, CSS, JavaScript)</li>
+                <li><strong>Other:</strong> Hard Disk Cloning</li>
+                <li><strong>Marketing:</strong> Digital Marketing (SEO, Social Media Marketing, Content Marketing, Email Marketing, Analytics)</li>
+            </ul>
+        </div>
+        <div class="cv-content">
+            <h2>Languages</h2>
+            <ul>
+                <li><strong>English:</strong> Fluent</li>
+                <li><strong>Swahili:</strong> Fluent</li>
+            </ul>
+        </div>
+        <div class="cv-content">
+            <h2>References</h2>
+            <ul>
+                <li><strong>Rodgers Ashioya</strong>, Cloud Productivity Solutions, Kenya<br>Email: <a href="mailto:ashioyarodgers@gmail.com">ashioyarodgers@gmail.com</a><br>Tel: <a href="tel:+254723996409">+254723996409</a></li>
+                <li><strong>Martin Mugambi</strong>, Computer for Schools Kenya<br>Email: <a href="mailto:martin@cfskinstitute.ac.ke">martin@cfskinstitute.ac.ke</a></li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Shilaku Innocent Omuyonga</p>
+    </footer>
+
+    <script>
+        function showCV() {
+            document.querySelector('.cv-section').classList.toggle('visible');
+        }
+    </script>
+    <script src="personal.js"></script>
+</body>
+</html>

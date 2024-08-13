@@ -1,0 +1,162 @@
+@font-face {
+            font-family: 'Algerian';
+            src: url('https://path-to-algerian-font.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Forte';
+            src: url('https://path-to-forte-font.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Harlow Solid Italic';
+            src: url('https://path-to-harlow-solid-italic-font.woff2') format('woff2');
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 20px;
+            color: white;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            animation: background-animation 15s ease infinite;
+        }
+
+        @keyframes background-animation {
+            0% { background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475'); }
+            33% { background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085'); }
+            66% { background-image: url('https://images.unsplash.com/photo-1484417894907-623942c8ee29'); }
+            100% { background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475'); }
+        }
+
+        header {
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: red;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            transition: color 0.3s ease;
+        }
+
+        h1 
+
+/* General paragraph hover effect */
+p {
+    transition: color 0.3s ease, font-weight 0.3s ease;
+}
+
+/* All paragraph elements change to blue and bold on hover */
+p:hover {
+    color: rgb(7, 51, 247); /* Blue color */
+    font-weight: bold;
+}
+
+/* Specifically for paragraph elements within the CV section */
+.cv p:hover {
+    color: rgb(7, 51, 247); /* Blue color */
+    font-weight: bold;
+}
+
+
+
+
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Algerian', sans-serif;
+    background: linear-gradient(to right, #00BFFF, #87CEFA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 10px;
+}
+
+        h1:hover, h2:hover {
+            color: yellow;
+        }
+
+        .about-me h2 {
+            font-family: 'Forte', sans-serif;
+        }
+
+        .contact-info h2, .cv h2 {
+            font-family: 'Harlow Solid Italic', sans-serif;
+        }
+
+        a {
+            transition: color 0.3s, text-shadow 0.3s;
+        }
+
+        a:hover {
+            color: yellow;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.9);
+        }
+
+        .contact-dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .contact-dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            min-width: 200px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .contact-dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s;
+        }
+
+        .contact-dropdown-content a:hover {
+            background-color: #333;
+        }
+
+        .contact-dropdown:hover .contact-dropdown-content {
+            display: block;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.3s, color 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+            opacity: 0.8;
+        }
+
+        .social-icons a.email { color: #D44638; } /* Email color (example: Gmail) */
+        .social-icons a.instagram { color: #E4405F; }
+        .social-icons a.linkedin { color: #0077B5; }
+        .social-icons a.whatsapp { color: #25D366; }
+        .social-icons a.twitter { color: #1DA1F2; } /* Twitter blue color */
+        .social-icons a.phone { color: #4CAF50; } /* Example phone color */
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: rgba(255, 255, 255, 0.7);
+        }
